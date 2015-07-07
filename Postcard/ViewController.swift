@@ -18,13 +18,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button1: UIButton!
     
-    
+    @IBOutlet weak var label2: UILabel!
     
     @IBAction func sendMail(sender: AnyObject) {
         label1.hidden = false
         label1.text = text1.text
         label1.textColor = UIColor.redColor()
         text1.text = ""
+        label2.hidden=false
+        label2.text = text2.text
+        label2.textColor = UIColor.blueColor()
         button1.setTitle("mail sent", forState:UIControlState.Normal)
         text1.resignFirstResponder()
     }
